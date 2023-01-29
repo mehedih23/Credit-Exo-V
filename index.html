@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit-Exo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header class="my-4">
+        <h1 class="text-5xl text-center">Be safe with <span class="text-red-500 font-medium">Credit-Exo</span></h1>
+    </header>
+
+    <main>
+        <section class="w-9/12 mx-auto">
+            <div class="grid grid-cols-3 gap-6 text-white">
+                <div class="bg-amber-400 rounded-lg p-6">
+                    <h4 class="text-2xl">Deposit</h4>
+                    <h2 class="text-4xl">$<span id="total-deposit">00</span></h2>
+                </div>
+                <div class="bg-sky-400 rounded-lg p-6">
+                    <h4 class="text-2xl">Withdraw</h4>
+                    <h2 class="text-4xl">$<span id="total-withdraw">00</span></h2>
+                </div>
+                <div class="bg-purple-400 rounded-lg p-6">
+                    <h4 class="text-2xl">Balance</h4>
+                    <h2 class="text-4xl">$<span id="total-balance">980</span></h2>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-6 my-6">
+                <div class="bg-amber-400 rounded-lg p-6">
+                    <h2 class="text-4xl text-white font-bold">Please Deposit</h2>
+                    <input type="text" name="deposit" id="deposit-field" placeholder="$ amount you want to deposit"
+                        class="w-4/5 h-12 p-4 my-4 rounded-lg block">
+                    <button id="deposit-btn"
+                        class="bg-purple-800 px-6 py-2 rounded-lg font-bold text-white hover:bg-purple-600">Deposit</button>
+                </div>
+                <div class="bg-sky-400 rounded-lg p-6">
+                    <h2 class="text-4xl text-white font-bold">Please Withdraw</h2>
+                    <input type="text" name="withdraw" id="withdraw-field" placeholder="$ amount you want to withdraw"
+                        class="w-4/5 h-12 p-4 my-4 rounded-lg block">
+                    <button id="withdraw-btn"
+                        class="bg-purple-800 px-6 py-2 rounded-lg font-bold text-white hover:bg-purple-600">withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="./js/deposit.js"></script>
+    <script src="./js/withdraw.js"></script>
+</body>
+
+</html>
